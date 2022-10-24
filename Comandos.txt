@@ -1,0 +1,23 @@
+#CONFIGURAR USUARIO
+git config --global user.name "Seu nome"
+git config --global user.email "seuemail@gmail.com"
+
+#INICIALIZAR REPOSITÓRIO
+git init
+
+#Trocar a branch default para Main
+git config --global init.defaultBranch main
+
+#ADICIONAR ARQUIVO AO CACHE DO GIT
+git add comandos.txt
+git add --all
+
+#REMOVER ARQUIVO DO CACHE DO GIT
+git rm --cached comandos.txt
+git rm --cached -r .
+
+#REGISTRAR ALTERAÇÕES (COMMIT)
+git commit -m "Descricao da alteracao"
+
+#VER ALTERAÇÕES
+git diff
