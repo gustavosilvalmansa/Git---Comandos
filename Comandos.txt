@@ -19,10 +19,21 @@ git rm --cached -r .
 #REGISTRAR ALTERAÇÕES (COMMIT)
 git commit -m "Descricao da alteracao"
 
+#CORRIGIR COMMIT (MAS EXCLUI ANTERIOR)
+git commit --amend -m "Corrigindo alteracao"
+git commit --amend --no-edit "Altera commit sem alterar mensagem"
+
 #VER ALTERAÇÕES EM CACHE
 git diff
 git diff --cached   (Não comitado, mas adicionado ao cache)
 
 #VER ALTERAÇÕES DE COMMITS
 git log
+git log --oneline
+git log -1
 
+
+#USAR COMMITS ANTERIORES
+git checkout <commit hash>
+VOLTA PARA VERSÃO ORIGINAL
+git checkout master
