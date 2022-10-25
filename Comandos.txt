@@ -19,5 +19,10 @@ git rm --cached -r .
 #REGISTRAR ALTERAÇÕES (COMMIT)
 git commit -m "Descricao da alteracao"
 
-#VER ALTERAÇÕES
+#VER ALTERAÇÕES EM CACHE
 git diff
+git diff --cached   (Não comitado, mas adicionado ao cache)
+
+#VER ALTERAÇÕES DE COMMITS
+git log
+
