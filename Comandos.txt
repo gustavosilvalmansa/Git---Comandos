@@ -37,3 +37,23 @@ git log -1
 git checkout <commit hash>
 VOLTA PARA VERSÃO ORIGINAL
 git checkout master
+
+#IGNORAR ARQUIVO USANDO GITIGNORE
+touch .gitignore
+
+
+#CLONAR REPOSITORIO
+git clone gitrepo gitclone  / git clone <repo> <destinyfolder>
+
+#ADICIONAR REPOSITÓRIO REMOTO
+git remote origin <link>
+
+
+#ATUALIZAR REPOSITÓRIO REMOTO
+git remote set-url origin <linknovo>
+
+#ENVIAR DADOS PARA O REPOSITÓRIO
+git push
+
+#BAIXAR DADOS DO REPOSITÓRIO
+git pull
