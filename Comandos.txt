@@ -53,7 +53,27 @@ git remote origin <link>
 git remote set-url origin <linknovo>
 
 #ENVIAR DADOS PARA O REPOSITÓRIO
-git push
+git push origin master
 
 #BAIXAR DADOS DO REPOSITÓRIO
-git pull
+git pull origin master
+
+#EDITAR README
+Ref: https://dillinger.io/
+
+#CONFIGURAR SSH
+cd ~/.ssh/
+start .
+eval $(ssh-agent)
+ssh-add ~/.ssh/<keyname>
+
+#LISTAR BRANCHS
+git branch --list
+
+#CRIAR  BRANCH
+git branch <branch>
+git checkout -b <branch>
+
+#MUDAR BRANCH
+git checkout <branch>
+git switch <branch>
