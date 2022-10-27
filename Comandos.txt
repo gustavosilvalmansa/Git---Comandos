@@ -93,3 +93,12 @@ git branch -m <nomeantigo> <nomenovo>
 
 #MESCLAR BRANCHES
 git merge main
+
+#PARAR MERGE
+git   merge --abort
+
+
+#VOLTAR PARA ESTADO DO ULTIMO COMMIT
+git reset --hard
+
+
