@@ -77,3 +77,19 @@ git checkout -b <branch>
 #MUDAR BRANCH
 git checkout <branch>
 git switch <branch>
+
+#SUBIR BRANCH PARA O SERVIDOR
+git push --set-upstream origin develop
+git push -u <branch>
+
+#EXCLUIR BRANCH LOCAL
+git branch -d <branch>
+
+#EXCLUIR BRANCH REMOTA
+git push --delete origin <branch>
+
+#RENOMEAR BRANCH
+git branch -m <nomeantigo> <nomenovo>
+
+#MESCLAR BRANCHES
+git merge main
