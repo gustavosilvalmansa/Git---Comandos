@@ -92,7 +92,7 @@ git push --delete origin <branch>
 git branch -m <nomeantigo> <nomenovo>
 
 #MESCLAR BRANCHES
-git merge main
+git merge <branch>
 
 #PARAR MERGE
 git   merge --abort
@@ -102,3 +102,27 @@ git   merge --abort
 git reset --hard
 
 
+#CRIANDO TAGS
+git tag <nome>
+git tag  -a -m "Mensagem da tag" <nome>
+git tag <nome> <hash_commit>
+git tag  -a -m "Mensagem da tag" <nome> <hash_commit>
+
+
+#COMPARAR TAGS
+GIT DIFF <TAG1> <TAG2>
+
+#REMOVENDO TAGS
+git tag -d <TAG>
+git push --delete origin <tag>
+
+#SALVA MUDANÇAS NÃO COMMITADAS
+git stash
+
+#APLICA MUDANÇAS NÃO COMMITADAS
+git stash apply
+git stash apply stash@{1}
+
+#REMOVER MUDANÇAS NÃO COMMITADAS
+git stash pop
+git stash drop stash@{1}
